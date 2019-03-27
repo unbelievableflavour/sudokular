@@ -1,5 +1,5 @@
-project('com.github.parnold-x.sudoku', ['vala', 'c'],
-    version: '0.1.8'
+project('com.github.bartzaalberg.sudoku', ['vala', 'c'],
+    version: '0.0.1'
 )
 
 gnome = import('gnome')
@@ -9,7 +9,6 @@ asresources = gnome.compile_resources(
     source_dir: 'data',
     c_name: 'as'
 )
-
 
 conf = configuration_data()
 # Get the package data directory under Meson
@@ -33,11 +32,12 @@ c_args = [
 ]
 
 executable(
-    'com.github.parnold-x.sudoku',
+    meson.project_name(),
     'src/Application.vala',
+    'src/Constants.vala',
     'src/MainWindow.vala',
     'src/Board.vala',
-    'src/ToolBar.vala',
+    'src/HeaderBar.vala',
     'src/WinPage.vala',
     'src/logic/Difficulty.vala',
     'src/logic/SudokuBoard.vala',

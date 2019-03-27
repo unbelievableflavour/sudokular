@@ -17,7 +17,7 @@
  * Boston, MA 02111-1307, USA.
  */
 
-namespace Sudoku {
+namespace Application {
 	private class Cell : Gtk.DrawingArea {
 		public int row;
 		public int col;

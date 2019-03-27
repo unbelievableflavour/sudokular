@@ -17,7 +17,7 @@
  * Boston, MA 02111-1307, USA.
  */
 
-namespace Sudoku {
+namespace Application {
 
     public class SudokuBoard : Object {
         private const int time_factor_reduce = 34; // s

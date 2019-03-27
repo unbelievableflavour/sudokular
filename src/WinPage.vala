@@ -17,7 +17,7 @@
  * Boston, MA 02111-1307, USA.
  */
 
-namespace Sudoku {
+namespace Application {
 public class WinPage : Gtk.AspectFrame {
 	private Gtk.Label error_label;
 	private Gtk.Label points_label;

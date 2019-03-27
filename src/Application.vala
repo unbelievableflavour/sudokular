@@ -1,45 +1,56 @@
-/*
- * Copyright (c) 2017 Peter Arnold
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public
- * License as published by the Free Software Foundation; either
- * version 2 of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * General Public License for more details.
- *
- * You should have received a copy of the GNU General Public
- * License along with this program; if not, write to the
- * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
- * Boston, MA 02111-1307, USA.
- */
+namespace Application {
+public class App:Granite.Application {
 
-namespace Sudoku {
-    public class SudokuApp : Gtk.Application {
-        private MainWindow window = null;
-        public string[] args;
+    public static MainWindow window = null;
+    public static GLib.Settings settings;
 
+    construct {
+        program_name = Constants.APPLICATION_NAME;
+        application_id = Constants.APPLICATION_NAME;
+        settings = new GLib.Settings (Constants.APPLICATION_NAME);
+    }
 
-        public SudokuApp () {
-            Object (application_id: "com.github.parnold-x.sudoku",
-            flags: ApplicationFlags.FLAGS_NONE);
+    protected override void activate () {
+        new_window ();
+    }
+
+    public static int main (string[] args) {
+
+        var app = new Application.App ();
+        return app.run (args);
+    }
+
+    public void new_window () {
+        if (window != null) {
+            window.present ();
+            return;
         }
 
-        public override void activate () {
-            if (get_windows () == null) {
-                window = new MainWindow (this);
-            } else {
-                window.present ();
-            }
-        }
+        window = new MainWindow (this);
+        go_to_last_saved_position (window);
+        go_to_last_saved_size (window);
 
-        public static void main (string[] args) {
-            var app = new Sudoku.SudokuApp ();
-            app.args = args;
-            app.run (args);
+        window.show_all ();
+    }
+
+
+    private void go_to_last_saved_position (MainWindow main_window) {
+        int window_x, window_y;
+        settings.get ("window-position", "(ii)", out window_x, out window_y);
+        if (window_x != -1 || window_y != -1) {
+            window.move (window_x, window_y);
         }
     }
+
+    private void go_to_last_saved_size (MainWindow main_window) {
+        var rect = Gtk.Allocation ();
+
+        settings.get ("window-size", "(ii)", out rect.width, out rect.height);
+        window.set_allocation (rect);
+
+        if (settings.get_boolean ("window-maximized")) {
+            window.maximize ();
+        }
+    }
+}
 }

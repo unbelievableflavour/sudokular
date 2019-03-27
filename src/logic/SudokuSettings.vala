@@ -17,7 +17,7 @@
  * Boston, MA 02111-1307, USA.
  */
 
-namespace Sudoku {
+namespace Application {
     public const string saveFile = "savegame";
     public const string highscoreFile = "highscore";
 
@@ -37,7 +37,7 @@ namespace Sudoku {
 
         construct {
             try {
-                dataFolder = File.new_for_path (Path.build_path (Path.DIR_SEPARATOR_S, Environment.get_user_data_dir (), "com.github.parnold-x.sudoku"));
+                dataFolder = File.new_for_path (Path.build_path (Path.DIR_SEPARATOR_S, Environment.get_user_data_dir (), "com.github.bartzaalberg.sudoku"));
                 if (!dataFolder.query_exists ()) {
                     dataFolder.make_directory ();
                 }
