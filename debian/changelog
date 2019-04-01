@@ -1,0 +1,13 @@
+com.github.bartzaalberg.sudoku (0.0.2) UNSTABLE; urgency=low
+
+  * Updated appdata
+  * Added issues tab for repository so that Houston will be able to create issues
+
+ -- Bart Zaalberg <bartzaalberg@gmail.com>  Mon, 01 Apr 2019 19:30:00 +0200
+
+com.github.bartzaalberg.sudoku (0.0.1) UNSTABLE; urgency=low
+
+  * First release
+
+ -- Bart Zaalberg <bartzaalberg@gmail.com>  Fri, 28 Mar 2019 10:11:00 +0200
+
