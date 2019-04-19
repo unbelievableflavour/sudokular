@@ -37,7 +37,7 @@ namespace Application {
 
         construct {
             try {
-                dataFolder = File.new_for_path (Path.build_path (Path.DIR_SEPARATOR_S, Environment.get_user_data_dir (), "com.github.bartzaalberg.sudoku"));
+                dataFolder = File.new_for_path (Path.build_path (Path.DIR_SEPARATOR_S, Environment.get_user_data_dir (), "com.github.bartzaalberg.sudokular"));
                 if (!dataFolder.query_exists ()) {
                     dataFolder.make_directory ();
                 }

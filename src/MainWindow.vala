@@ -34,9 +34,11 @@ public class MainWindow : Gtk.Window {
         win_page.return_to_welcome.connect (() => {
             stack.set_visible_child (welcome_box);
         });
-        Gtk.Image image = new Gtk.Image.from_resource ("/com/github/bartzaalberg/sudoku/header.png");
+        Gtk.Image image = new Gtk.Image.from_resource ("/com/github/bartzaalberg/sudokular/header.png");
+        image.override_background_color( Gtk.StateFlags.NORMAL, Constants.WHITE);
         welcome_box.pack_start (image);
         welcome_box.pack_end (welcome);
+
     	stack.add_named (welcome_box, "welcome");
         stack.add_named (win_page, "win");
         var main_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);

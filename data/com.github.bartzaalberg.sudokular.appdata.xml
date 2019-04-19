@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-    <id>com.github.bartzaalberg.sudoku</id>
+    <id>com.github.bartzaalberg.sudokular</id>
     <metadata_license>CC0</metadata_license>
     <project_license>GPL-3.0+</project_license>
     <name>Sudoku</name>
@@ -14,7 +14,7 @@
         </ul>
     </description>
     <provides>
-        <binary>com.github.bartzaalberg.sudoku</binary>
+        <binary>com.github.bartzaalberg.sudokular</binary>
     </provides>
     <content_rating type="oars-1.1">
         <content_attribute id="violence-cartoon">none</content_attribute>
@@ -66,16 +66,16 @@
     </releases>
     <screenshots>
         <screenshot type="default">
-            <image>https://raw.githubusercontent.com/bartzaalberg/sudoku/master/screenshot.png</image>
+            <image>https://raw.githubusercontent.com/bartzaalberg/sudokular/master/screenshot.png</image>
         </screenshot>
         <screenshot>
-            <image>https://raw.githubusercontent.com/bartzaalberg/sudoku/master/screenshot2.png</image>
+            <image>https://raw.githubusercontent.com/bartzaalberg/sudokular/master/screenshot2.png</image>
         </screenshot>
     </screenshots>
     <developer_name>Bart Zaalberg</developer_name>
-    <url type="homepage">https://github.com/bartzaalberg/sudoku</url>
-    <url type="bugtracker">https://github.com/bartzaalberg/sudoku/issues</url>
-    <url type="help">https://github.com/bartzaalberg/sudoku/issues</url>
+    <url type="homepage">https://github.com/bartzaalberg/sudokular</url>
+    <url type="bugtracker">https://github.com/bartzaalberg/sudokular/issues</url>
+    <url type="help">https://github.com/bartzaalberg/sudokular/issues</url>
     <custom>
         <value key="x-appcenter-color-primary">rgb(230, 199, 168)</value>
         <value key="x-appcenter-color-primary-text">rgb(0, 0, 0)</value>

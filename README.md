@@ -2,14 +2,14 @@
 The number that is alone
 
 <p align="center">
-    <a href="https://appcenter.elementary.io/com.github.bartzaalberg.sudoku">
+    <a href="https://appcenter.elementary.io/com.github.bartzaalberg.sudokular">
         <img src="https://appcenter.elementary.io/badge.svg" alt="Get it on AppCenter">
     </a>
 </p>
 
 <p align="center">
     <img
-    src="https://raw.githubusercontent.com/bartzaalberg/sudoku/master/screenshot.png" />
+    src="https://raw.githubusercontent.com/bartzaalberg/sudokular/master/screenshot.png" />
 </p>
 
 ### Sudoku

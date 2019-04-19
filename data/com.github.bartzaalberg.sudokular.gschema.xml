@@ -1,5 +1,5 @@
 <schemalist>
-  <schema id="com.github.bartzaalberg.sudoku" path="/com/github/bartzaalberg/sudoku/" gettext-domain="my-app">
+  <schema id="com.github.bartzaalberg.sudokular" path="/com/github/bartzaalberg/sudokular/" gettext-domain="my-app">
 	<key name="window-maximized" type="b">
 	  <default>false</default>
 	  <summary>Maximized</summary>

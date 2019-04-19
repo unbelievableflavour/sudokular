@@ -1,4 +1,4 @@
-project('com.github.bartzaalberg.sudoku', ['vala', 'c'],
+project('com.github.bartzaalberg.sudokular', ['vala', 'c'],
     version: '0.0.1'
 )
 

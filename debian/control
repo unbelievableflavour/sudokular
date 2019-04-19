@@ -1,4 +1,4 @@
-Source: com.github.bartzaalberg.sudoku
+Source: com.github.bartzaalberg.sudokular
 Section: game
 Priority: optional
 Maintainer: Bart Zaalberg <bartzaalberg@gmail.com>
@@ -9,7 +9,7 @@ Build-Depends: meson,
                libgranite-dev (>= 0.3.0),
                valac (>= 0.16)
 
-Package: com.github.bartzaalberg.sudoku
+Package: com.github.bartzaalberg.sudokular
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, qqwing
 Description: The number that is alone
