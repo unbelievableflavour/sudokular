@@ -1,8 +1,8 @@
 [Desktop Entry]
 Type=Application
-Name=Sudoku
+Name=Sudokular
 Comment=The number that is alone
-GenericName=Sudoku
+GenericName=Sudokular
 TryExec=com.github.bartzaalberg.sudokular
 Exec=com.github.bartzaalberg.sudokular
 Icon=com.github.bartzaalberg.sudokular

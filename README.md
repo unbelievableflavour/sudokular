@@ -1,4 +1,4 @@
-# Sudoku
+# Sudokular
 The number that is alone
 
 <p align="center">
