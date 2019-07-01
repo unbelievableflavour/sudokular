@@ -1,3 +1,11 @@
+com.github.bartzaalberg.sudokular (0.0.3) UNSTABLE; urgency=low
+
+  * Updated application name
+  * Updated screenshot
+  * Updated header image
+
+ -- Bart Zaalberg <bartzaalberg@gmail.com>  Mon, 01 Jul 2019 22:42:00 +0200
+
 com.github.bartzaalberg.sudokular (0.0.2) UNSTABLE; urgency=low
 
   * Updated appdata
