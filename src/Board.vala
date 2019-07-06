@@ -285,7 +285,7 @@ namespace Application {
         		get_cell (r, c).zoom ();
         	});
         	board.notify["fails"].connect ((s, p) => {
-        		drawtext = "Wrong number";
+        		drawtext = _("Wrong number");
 				text_animation_factor = 1;
 				GLib.Timeout.add (30,() => {
 					text_animation_factor += 0.05;

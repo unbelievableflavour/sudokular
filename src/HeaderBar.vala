@@ -34,17 +34,17 @@ public class HeaderBar : Gtk.HeaderBar {
 		factor_label.visible = true;
 		fails_label.visible = true;
 		board.notify["points"].connect ((s, p) => {
-			points_label.set_markup ("Points: <b>%i</b>".printf (board.points));
+			points_label.set_markup (_("Points: ") + "<b>%i</b>".printf (board.points));
 		});
 		board.notify["factor"].connect ((s, p) => {
-			factor_label.set_markup ("Factor: <b>x%i</b>".printf (board.factor));
+			factor_label.set_markup (_("Factor: ") + "<b>x%i</b>".printf (board.factor));
 		});
 		board.notify["fails"].connect ((s, p) => {
 			set_fail (board);
 		});
 		set_fail (board);
-		points_label.set_markup ("Points: <b>%i</b>".printf (board.points));
-		factor_label.set_markup ("Factor: <b>x%i</b>".printf (board.factor));
+		points_label.set_markup (_("Points: ") + "<b>%i</b>".printf (board.points));
+		factor_label.set_markup (_("Factor: ") + "<b>x%i</b>".printf (board.factor));
 		show_all ();
 	}
 
