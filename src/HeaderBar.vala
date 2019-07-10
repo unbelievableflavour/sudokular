@@ -83,6 +83,7 @@ public class HeaderBar : Gtk.HeaderBar {
         return_button.get_style_context ().add_class ("back-button");
         return_button.clicked.connect (() => {
 			reset();
+            stack_manager.save_current_board();
             stack_manager.get_stack ().visible_child_name = "welcome-view";
         });
     }
