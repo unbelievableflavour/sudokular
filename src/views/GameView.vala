@@ -9,7 +9,6 @@ public class GameView : Gtk.Stack {
     private SudokuBoard sudoku_board;
     private HeaderBar header_bar = HeaderBar.get_instance ();
     private Gtk.Stack stack;
-    private Gtk.InfoBar info_bar;
 
     public GameView() {
         this.settings = new SudokuSettings ();
@@ -36,33 +35,15 @@ public class GameView : Gtk.Stack {
         main_box.pack_end (stack, false, true, 0);
         this.add (main_box);
 
-        info_bar = new Gtk.InfoBar ();
         if (settings.isSaved ()) {
             sudoku_board = new SudokuBoard.from_string (settings.load ());
-            if (!sudoku_board.isFinshed ()) {
-                info_bar.set_message_type (Gtk.MessageType.ERROR);
-                main_box.pack_end (info_bar, false, true, 0);
-                var content = info_bar.get_content_area ();
-                var infobox = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 20);
-                content.add (infobox);
-                var button = new Gtk.Button.with_label (_("Resume last game"));
-                button.clicked.connect (() => {
-                    info_bar.no_show_all = true;
-                    info_bar.hide ();
-                    header_bar.set_board (sudoku_board);
-                    set_board (sudoku_board);
-                });
-                infobox.pack_end (button);
-            } else {
+            if (sudoku_board.isFinshed ()) {
                 sudoku_board = null;
             }
-
         }
     }
 
     private void set_board (SudokuBoard sudoku_board) {
-        info_bar.no_show_all = true;
-        info_bar.hide ();
         var board = new Board (sudoku_board);
         stack.add_named (board, "board");
         show_all ();

@@ -31,7 +31,7 @@ public class WelcomeView : Gtk.ScrolledWindow {
             switch (option) {
                 case 1:
                     if (sudoku_board.isFinshed ()) {
-                        // sudoku_board = null;
+                        sudoku_board = null;
                     }
 
                     header_bar.set_board (sudoku_board);
