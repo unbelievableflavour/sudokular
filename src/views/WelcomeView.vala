@@ -13,7 +13,7 @@ public class WelcomeView : Gtk.ScrolledWindow {
     	var settings = new SudokuSettings ();
         var sudoku_board = new SudokuBoard.from_string (settings.load ());
         if (settings.isSaved () && !sudoku_board.isFinshed ()) {
-            welcome_view.append ("", _("Resume game"), _("Return to where you left off."));
+            welcome_view.append ("", _("Resume game"), _("Continue your game"));
         }
 
         welcome_view.activated.connect ((option) => {
