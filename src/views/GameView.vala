@@ -24,18 +24,18 @@ public class GameView : Gtk.Stack {
         main_box.pack_start (stack, true, true, 0);
 
         this.add (main_box);
-
-        if (settings.isSaved ()) {
-            sudoku_board = new SudokuBoard.from_string (settings.load ());
-            if (sudoku_board.isFinshed ()) {
-                sudoku_board = null;
-            }
-        }
     }
 
     private void set_board (SudokuBoard sudoku_board) {
         var board = new Board (sudoku_board);
+        var stack_board = stack.get_child_by_name("board");
+
+        if(stack_board != null ){
+            stack.remove(stack_board);
+        }
+
         stack.add_named (board, "board");
+
         show_all ();
         stack.set_visible_child (board);
         sudoku_board.start ();
