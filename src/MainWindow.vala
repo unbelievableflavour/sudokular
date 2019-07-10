@@ -30,6 +30,7 @@ public class MainWindow : Gtk.Window {
             switch (e.keyval) {
                 case Gdk.Key.q:
                   if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {
+                    stack_manager.save_current_board();
                     this.destroy ();
                   }
                   break;
