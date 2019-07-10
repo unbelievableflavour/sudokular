@@ -26,6 +26,10 @@ public class GameView : Gtk.Stack {
         this.add (main_box);
     }
 
+    public SudokuBoard get_board () {
+        return sudoku_board;
+    }
+
     private void set_board (SudokuBoard sudoku_board) {
         var board = new Board (sudoku_board);
         var stack_board = stack.get_child_by_name("board");

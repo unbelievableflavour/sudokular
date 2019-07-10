@@ -100,6 +100,12 @@ public class HeaderBar : Gtk.HeaderBar {
 	    dark_mode_switch.valign = Gtk.Align.CENTER;
 	    dark_mode_switch.bind_property ("active", gtk_settings, "gtk_application_prefer_dark_theme");
 	    settings.bind ("use-dark-theme", dark_mode_switch, "active", GLib.SettingsBindFlags.DEFAULT);
+		   dark_mode_switch.notify["active"].connect (() => {
+			if(stack_manager.get_stack ().visible_child_name == "game-view"){
+			stack_manager.reload_board();
+			}
+            
+        });
 	}
 }
 }

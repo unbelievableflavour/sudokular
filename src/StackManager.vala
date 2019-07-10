@@ -60,8 +60,13 @@ public class StackManager : Object {
         game_view.load_board(current_board);
    }
 
-    public void save_current_board () {
+   public void save_current_board () {
         game_view.save_board();
+   }
+
+   public void reload_board () {
+        var current_board = game_view.get_board();
+        game_view.load_board(current_board);
    }
 }
 }

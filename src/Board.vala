@@ -28,8 +28,12 @@ namespace Application {
 		public bool red_highlight_secondary = false;
 		public signal void cell_clicked (int row, int col, bool right_click);
 		public signal void number_entered (int row, int col, int number, bool ctrl);
+		private bool dark_mode;
 
 		public Cell (int row, int col, SudokuBoard board) {
+			var user_settings = new GLib.Settings (Constants.APPLICATION_NAME);
+			this.dark_mode = user_settings.get_boolean ("use-dark-theme");
+
 			this.row = row;
 			this.col = col;
 			this.board = board;
@@ -127,7 +131,12 @@ namespace Application {
      			c.set_font_size((get_allocated_height () / 1.5) * zoomFactor);
             	c.text_extents (drawtext, out extents);
             	c.move_to ((get_allocated_width () - extents.width) / 2 - 1, (get_allocated_height () + extents.height) / 2 + 1);
-            	c.set_source_rgb (0.365, 0.082, 0.098);
+				if(dark_mode){
+					c.set_source_rgb (240, 240, 240);
+				}else{
+					c.set_source_rgb (0.365, 0.082, 0.098);
+				}
+            	
             	c.show_text (drawtext);
 				c.restore ();
 			}
@@ -247,8 +256,11 @@ namespace Application {
     	private SudokuBoard board;
     	private string drawtext;
     	private double text_animation_factor;
+		private bool dark_mode;
 
 		public Board (SudokuBoard board) {
+			var user_settings = new GLib.Settings (Constants.APPLICATION_NAME);
+			this.dark_mode = user_settings.get_boolean ("use-dark-theme");
 			this.board = board;
             this.get_style_context ().add_class ("sudoku-board");
 			shadow_type = Gtk.ShadowType.NONE;
@@ -382,7 +394,12 @@ namespace Application {
         	}
 
         	c.set_line_width (1);
-        	c.set_source_rgb (0.6, 0.6, 0.6);
+			if(dark_mode == true){
+				c.set_source_rgb (255, 255, 255);
+			} else {
+				c.set_source_rgb (0.6, 0.6, 0.6);
+			}
+        	
         	for (var i = 1; i < 9; i++) {
         	    if (i % 3 == 0)
         	        continue;
@@ -400,7 +417,13 @@ namespace Application {
         	c.stroke ();
 
         	c.set_line_width (2);
-        	c.set_source_rgb (0.0, 0.0, 0.0);
+
+			if(dark_mode == true){
+				c.set_source_rgb (220,220,220);
+			} else {
+				c.set_source_rgb (0.0, 0.0, 0.0);
+			}
+
         	for (var i = 0; i <= 9; i += 3) {
         	    c.move_to (((int) (i * tile_length)) + 0.5, 0);
         	    c.line_to (((int) (i * tile_length)) + 0.5, board_length);
