@@ -3,7 +3,7 @@ public class HeaderBar : Gtk.HeaderBar {
 	static HeaderBar? instance;
 	
 	private StackManager stack_manager = StackManager.get_instance ();
-    
+
 	private Gtk.Label points_label = new Gtk.Label ("");
 	private Gtk.Label factor_label = new Gtk.Label ("");
 	private Gtk.Label fails_label = new Gtk.Label ("");
@@ -21,6 +21,7 @@ public class HeaderBar : Gtk.HeaderBar {
 
         set_custom_title (fails_label);
 
+		pack_start (return_button);
         pack_start (points_label);
 		pack_start (factor_label);
 		pack_end(dark_mode_switch);
@@ -81,7 +82,8 @@ public class HeaderBar : Gtk.HeaderBar {
         return_button.visible = false;
         return_button.get_style_context ().add_class ("back-button");
         return_button.clicked.connect (() => {
-            stack_manager.get_stack ().visible_child_name = "list-view";
+			reset();
+            stack_manager.get_stack ().visible_child_name = "welcome-view";
         });
     }
 
