@@ -1,25 +1,31 @@
 namespace Application {
 public class HeaderBar : Gtk.HeaderBar {
 	static HeaderBar? instance;
+	
+	private StackManager stack_manager = StackManager.get_instance ();
 
 	private Gtk.Label points_label = new Gtk.Label ("");
 	private Gtk.Label factor_label = new Gtk.Label ("");
 	private Gtk.Label fails_label = new Gtk.Label ("");
+	public Gtk.Button return_button = new Gtk.Button ();
+
 	private Granite.ModeSwitch dark_mode_switch = new Granite.ModeSwitch.from_icon_name (
 		"display-brightness-symbolic", "weather-clear-night-symbolic"
 	);
 
 	HeaderBar () {
+		generate_return_button ();
         generate_dark_mode_button ();
+
 		reset ();
 
-		this.show_close_button = true;
+        set_custom_title (fails_label);
 
+		pack_start (return_button);
         pack_start (points_label);
 		pack_start (factor_label);
 		pack_end(dark_mode_switch);
-
-        set_custom_title (fails_label);
+		this.show_close_button = true;
 	}
 
     public static HeaderBar get_instance () {
@@ -69,6 +75,22 @@ public class HeaderBar : Gtk.HeaderBar {
 		factor_label.visible = false;
 		fails_label.visible = false;
 	}
+
+    private void generate_return_button () {
+        return_button.label = _("Back");
+        return_button.no_show_all = true;
+        return_button.visible = false;
+        return_button.get_style_context ().add_class ("back-button");
+        return_button.clicked.connect (() => {
+			reset();
+            stack_manager.save_current_board();
+            stack_manager.get_stack ().visible_child_name = "welcome-view";
+        });
+    }
+
+    public void show_return_button (bool answer) {
+        return_button.visible = answer;
+    }
 
     private void generate_dark_mode_button () {
 	    GLib.Settings settings = new GLib.Settings (Constants.APPLICATION_NAME);

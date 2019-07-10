@@ -53,7 +53,7 @@ public class WinPage : Gtk.AspectFrame {
 		highscore_label.get_style_context ().add_class ("win-label");
 		grid.attach (highscore_label, 1, 3, 1, 1);
 
-		var button = new Gtk.Button.with_label (_("New Game"));
+		var button = new Gtk.Button.with_label (_("Back to menu"));
 		button.get_style_context ().add_class ("win-label");
 		button.get_style_context ().add_class ("win-button");
 		button.margin = 20;
