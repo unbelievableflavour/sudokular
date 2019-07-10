@@ -55,5 +55,9 @@ public class StackManager : Object {
    public void set_current_board (SudokuBoard current_board) {
         game_view.load_board(current_board);
    }
+
+    public void save_current_board () {
+        game_view.save_board();
+   }
 }
 }

@@ -84,5 +84,11 @@ public class GameView : Gtk.Stack {
         header_bar.set_board (sudoku_board);
         set_board (sudoku_board);
     }
+
+    public void save_board () {
+        if (sudoku_board != null) {
+            settings.save (sudoku_board.to_string ());
+        }
+    }
 }
 }

@@ -1,7 +1,5 @@
 namespace Application {
 public class MainWindow : Gtk.Window {
-	private SudokuSettings settings;
-    private SudokuBoard sudoku_board;
     private WinPage win_page;
     private HeaderBar header_bar = HeaderBar.get_instance ();
     private uint configure_id;
@@ -23,9 +21,7 @@ public class MainWindow : Gtk.Window {
     }
 
     private bool on_window_closing () {
-        if (sudoku_board != null) {
-            settings.save (sudoku_board.to_string ());
-        }
+        stack_manager.save_current_board();
         return false;
     }
 
