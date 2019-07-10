@@ -47,6 +47,10 @@ public class StackManager : Object {
             if (stack.get_visible_child_name () == DIFFICULTY_VIEW_ID) {
                 header_bar.show_return_button (true);
             }
+
+            if (stack.get_visible_child_name () == GAME_VIEW_ID) {
+                header_bar.show_return_button (true);
+            }
         });
 
         window.add (stack);
