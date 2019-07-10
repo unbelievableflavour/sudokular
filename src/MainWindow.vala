@@ -1,6 +1,5 @@
 namespace Application {
 public class MainWindow : Gtk.Window {
-    private WinPage win_page;
     private HeaderBar header_bar = HeaderBar.get_instance ();
     private uint configure_id;
     private StackManager stack_manager = StackManager.get_instance ();

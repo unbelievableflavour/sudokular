@@ -4,8 +4,6 @@ namespace Application {
 public class DifficultyView : Gtk.ScrolledWindow {
 
     private StackManager stack_manager = StackManager.get_instance ();
-    private SudokuSettings settings;
-    private SudokuBoard sudoku_board;
     private HeaderBar header_bar = HeaderBar.get_instance ();
 
     public DifficultyView () {
