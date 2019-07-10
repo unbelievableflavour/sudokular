@@ -1,0 +1,6 @@
+src/logic/Difficulty.vala
+
+src/Board.vala
+src/HeaderBar.vala
+src/MainWindow.vala
+src/WinPage.vala
