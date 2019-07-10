@@ -1,3 +1,14 @@
+com.github.bartzaalberg.sudokular (1.0.0) STABLE; urgency=low
+
+  * Updated application name in store
+  * Added dark mode for grid
+  * Added new menu
+  * Added back button
+  * Fixed saving bug on application kill shortcut
+  * Updated screenshots
+
+ -- Bart Zaalberg <bartzaalberg@gmail.com>  Wed, 10 Jul 2019 21:12:00 +0200
+
 com.github.bartzaalberg.sudokular (0.0.3) UNSTABLE; urgency=low
 
   * Updated application name
