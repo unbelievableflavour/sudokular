@@ -1,11 +1,10 @@
 namespace Application {
-public class App:Granite.Application {
+public class App : Gtk.Application {
 
     public static MainWindow window = null;
     public static GLib.Settings settings;
 
     construct {
-        program_name = Constants.APPLICATION_NAME;
         application_id = Constants.APPLICATION_NAME;
         settings = new GLib.Settings (Constants.APPLICATION_NAME);
     }
@@ -15,7 +14,6 @@ public class App:Granite.Application {
     }
 
     public static int main (string[] args) {
-
         var app = new Application.App ();
         return app.run (args);
     }
