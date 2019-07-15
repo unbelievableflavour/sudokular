@@ -41,6 +41,11 @@ namespace Application {
                 if (!dataFolder.query_exists ()) {
                     dataFolder.make_directory ();
                 }
+
+                if (!isSaved_file (saveFile)) {
+                    dataFolder.get_child (saveFile).create (FileCreateFlags.NONE);
+                }
+
                 if (isSaved_file (highscoreFile)) {
                     _highscore = int.parse (load_file (highscoreFile));
                 }
