@@ -10,9 +10,10 @@ public class WelcomeView : Gtk.ScrolledWindow {
         var welcome_view = new Welcome (_("Sudokular"), "");
         welcome_view.append ("", _("New game"), _("Choose difficulty and start a new puzzle"));
 
-    	var settings = new SudokuSettings ();
+        var settings = new SudokuSettings ();
         var sudoku_board = new SudokuBoard.from_string (settings.load ());
-        if (settings.isSaved () && !sudoku_board.isFinshed ()) {
+
+        if (settings.load () != null && !sudoku_board.isFinshed ()) {
             welcome_view.append ("", _("Resume game"), _("Continue your game"));
         }
 
@@ -21,8 +22,6 @@ public class WelcomeView : Gtk.ScrolledWindow {
                 case 0:
                     stack_manager.get_stack ().visible_child_name = "difficulty-view";
                     break;
-            }
-            switch (option) {
                 case 1:
                     var settings_current = new SudokuSettings ();
                     var sudoku_board_current = new SudokuBoard.from_string (settings_current.load ());
