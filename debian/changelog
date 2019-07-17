@@ -1,3 +1,12 @@
+com.github.bartzaalberg.sudokular (1.0.1) STABLE; urgency=low
+
+  * Do not resume games when content is null
+  * Generate save game on start
+  * Simplified building steps
+  * Removed depracated Granite.Application
+ 
+ -- Bart Zaalberg <bartzaalberg@gmail.com>  Wed, 17 Jul 2019 16:55:00 +0200
+
 com.github.bartzaalberg.sudokular (1.0.0) STABLE; urgency=low
 
   * Updated application name in store

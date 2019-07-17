@@ -46,6 +46,17 @@
         <content_attribute id="money-gambling">none</content_attribute>
       </content_rating>
       <releases>
+       <release version="1.0.1" date="2019-07-17">
+           <description>
+               <p>Small fixes</p>
+               <ul>
+                    <li>Do not resume games when content is null</li>
+                    <li>Generate save game on start</li>
+                    <li>Simplified building steps</li>
+                    <li>Removed depracated Granite.Application</li>
+               </ul>
+           </description>
+       </release>
        <release version="1.0.0" date="2019-07-10">
            <description>
                <p>Interface changes and more</p>
