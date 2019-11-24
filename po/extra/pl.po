@@ -1,0 +1,97 @@
+# Polish translations for Sudokular.
+# This file is distributed under the same license as the com.github.bartzaalberg.sudokular package.
+# Michał Nowakowski <nowakowski@offshore.rocks>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-06 15:23+0200\n"
+"PO-Revision-Date: 2019-11-24 13:12-0300\n"
+"Last-Translator: Michał Nowakowski <nowakowski@offshore.rocks>\n"
+"Language-Team: none\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/com.github.bartzaalberg.sudokular.desktop.in:4
+#: data/com.github.bartzaalberg.sudokular.desktop.in:6
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:6
+msgid "Sudokular"
+msgstr "Sudokular"
+
+#: data/com.github.bartzaalberg.sudokular.desktop.in:5
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:7
+msgid "The number that is alone"
+msgstr "Liczba, która jest samotna"
+
+#: data/com.github.bartzaalberg.sudokular.desktop.in:9
+msgid "com.github.bartzaalberg.sudokular"
+msgstr "com.github.bartzaalberg.sudokular"
+
+#: data/com.github.bartzaalberg.sudokular.desktop.in:12
+msgid "game;videogame;video game;player;sudoku;"
+msgstr "gra;grawideo;gra wideo;gracz;sudoku"
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:9
+msgid ""
+"The goal of Sudoku is to fill in a 9×9 grid with digits so that each column, "
+"row, and 3×3 section contain the numbers between 1 to 9. At the beginning of "
+"the game, the 9×9 grid will have some of the squares filled in. Your job is "
+"to use logic to fill in the missing digits and complete the grid. A move is "
+"incorrect if:"
+msgstr ""
+"Celem sudoku jest wypełnienie siatki 9×9 cyframi tak, aby każda kolumna, rząd "
+"i sekcja 3×3 zawierały liczby od 1 do 9. Na początku gry, siatka 9×9 będzie "
+"miała wypełnione niektóre kwadraty. Twoim zadaniem jest użycie logiki do "
+"wypełnienia brakujących cyfr i uzupełnienia siatki. Ruch jest nieprawidłowy, jeśli:"
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:11
+msgid "Any row contains more than one of the same number from 1 to 9"
+msgstr "Jakikolwiek rząd posiada więcej, niż jedną taką samą cyfrę od 1 do 9"
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:12
+msgid "Any column contains more than one of the same number from 1 to 9"
+msgstr "Jakakolwiek kolumna posiada więcej, niż jedną taką samą cyfrę od 1 do 9"
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:13
+msgid "Any 3×3 grid contains more than one of the same number from 1 to 9"
+msgstr "Jakakolwiek sekcja 3×3 posiada więcej, niż jedną taką samą cyfrę od 1 do 9"
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:51
+msgid "Updated application name and theme"
+msgstr "Zaktualizowano nazwę aplikacji i szablon"
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:53
+msgid "Application is now called sudokular"
+msgstr "Aplikacja nazywa się teraz Sudokular"
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:54
+msgid "Updated screenshots"
+msgstr "Zaktualizowano zrzuty ekranu"
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:55
+msgid "Updated header image"
+msgstr "Zaktualizowano obrazek w nagłówku"
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:61
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:63
+msgid "Updated appdata"
+msgstr "Zaktualizowano AppData"
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:64
+msgid ""
+"Added issues to repository so that Houston will have a place to send issues"
+msgstr ""
+"Dodano mechanizm usterek do repozytorium, aby Houston miało miejsce do przesyłania usterek"
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:70
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:72
+msgid "First release"
+msgstr "Pierwsza wersja"
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:85
+msgid "Bart Zaalberg"
+msgstr "Bart Zaalberg"
