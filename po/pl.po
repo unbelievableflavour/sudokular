@@ -1,0 +1,89 @@
+# Polish translations for Sudokular.
+# This file is distributed under the same license as the com.github.bartzaalberg.sudokular package.
+# Michał Nowakowski <nowakowski@offshore.rocks>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: com.github.bartzaalberg.sudokular\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-06 15:23+0200\n"
+"PO-Revision-Date: 2019-11-24 13:12-0300\n"
+"Last-Translator: Michał Nowakowski <nowakowski@offshore.rocks>\n"
+"Language-Team: none\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/logic/Difficulty.vala:44
+msgid "Easy"
+msgstr "Łatwy"
+
+#: src/logic/Difficulty.vala:46
+msgid "Medium"
+msgstr "Średni"
+
+#: src/logic/Difficulty.vala:48
+msgid "Hard"
+msgstr "Trudny"
+
+#: src/logic/Difficulty.vala:50
+msgid "Master"
+msgstr "Mistrzowski"
+
+#: src/Board.vala:288
+msgid "Wrong number"
+msgstr "Zła liczba"
+
+#: src/HeaderBar.vala:37 src/HeaderBar.vala:46
+msgid "Points: "
+msgstr "Punkty: "
+
+#: src/HeaderBar.vala:40 src/HeaderBar.vala:47
+msgid "Factor: "
+msgstr "Mnożnik: "
+
+#: src/HeaderBar.vala:54 src/WinPage.vala:76
+msgid "broken series"
+msgstr "skuchy"
+
+#: src/HeaderBar.vala:76
+msgid "Light mode"
+msgstr "Jasny tryb"
+
+#: src/HeaderBar.vala:77
+msgid "Dark mode"
+msgstr "Ciemny tryb"
+
+#: src/MainWindow.vala:29
+msgid "Choose difficulty"
+msgstr "Wybierz trudność"
+
+#: src/MainWindow.vala:57
+msgid "Resume last game"
+msgstr "Wznów poprzednią grę"
+
+#: src/WinPage.vala:33
+msgid "Errors:"
+msgstr "Błędy:"
+
+#: src/WinPage.vala:42
+msgid "Result:"
+msgstr "Wynik:"
+
+#: src/WinPage.vala:49
+msgid "Highscore:"
+msgstr "Najwyższy wynik:"
+
+#: src/WinPage.vala:56
+msgid "New Game"
+msgstr "Nowa gra"
+
+#: src/WinPage.vala:68
+msgid "none!"
+msgstr "żadne!"
+
+#: src/WinPage.vala:68
+msgid "perfect!"
+msgstr "idealnie!"
