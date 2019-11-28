@@ -1,3 +1,9 @@
+com.github.bartzaalberg.sudokular (1.1.0) STABLE; urgency=low
+
+  * Added Polish translation
+ 
+ -- Bart Zaalberg <bartzaalberg@gmail.com>  Thu, 28 Nov 2019 20:34:00 +0200
+
 com.github.bartzaalberg.sudokular (1.0.1) STABLE; urgency=low
 
   * Do not resume games when content is null
