@@ -49,3 +49,8 @@ ninja
 
 ### Installing
 `sudo ninja install`
+
+### Update .pot file
+Call the following command from the build folder:
+
+`ninja com.github.bartzaalberg.sudokular-pot`
