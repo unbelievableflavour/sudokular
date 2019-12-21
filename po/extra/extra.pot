@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-06 15:23+0200\n"
+"POT-Creation-Date: 2019-12-22 00:22+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgid "com.github.bartzaalberg.sudokular"
 msgstr ""
 
 #: data/com.github.bartzaalberg.sudokular.desktop.in:12
-msgid "game;videogame;video game;player;sudoku;"
+msgid "game;videogame;player;sudoku;"
 msgstr ""
 
 #: data/com.github.bartzaalberg.sudokular.appdata.xml.in:9
@@ -58,36 +58,86 @@ msgid "Any 3×3 grid contains more than one of the same number from 1 to 9"
 msgstr ""
 
 #: data/com.github.bartzaalberg.sudokular.appdata.xml.in:51
-msgid "Updated application name and theme"
-msgstr ""
-
 #: data/com.github.bartzaalberg.sudokular.appdata.xml.in:53
-msgid "Application is now called sudokular"
+msgid "Added Polish translation"
 msgstr ""
 
-#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:54
-msgid "Updated screenshots"
-msgstr ""
-
-#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:55
-msgid "Updated header image"
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:59
+msgid "Small fixes"
 msgstr ""
 
 #: data/com.github.bartzaalberg.sudokular.appdata.xml.in:61
+msgid "Do not resume games when content is null"
+msgstr ""
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:62
+msgid "Generate save game on start"
+msgstr ""
+
 #: data/com.github.bartzaalberg.sudokular.appdata.xml.in:63
-msgid "Updated appdata"
+msgid "Simplified building steps"
 msgstr ""
 
 #: data/com.github.bartzaalberg.sudokular.appdata.xml.in:64
+msgid "Removed depracated Granite.Application"
+msgstr ""
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:70
+msgid "Interface changes and more"
+msgstr ""
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:72
+msgid "Updated application name in store"
+msgstr ""
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:73
+msgid "Added dark mode for grid"
+msgstr ""
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:74
+msgid "Added new menu"
+msgstr ""
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:75
+msgid "Added back button"
+msgstr ""
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:76
+msgid "Fixed saving bug on application kill shortcut"
+msgstr ""
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:77
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:86
+msgid "Updated screenshots"
+msgstr ""
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:83
+msgid "Updated application name and theme"
+msgstr ""
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:85
+msgid "Application is now called sudokular"
+msgstr ""
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:87
+msgid "Updated header image"
+msgstr ""
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:93
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:95
+msgid "Updated appdata"
+msgstr ""
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:96
 msgid ""
 "Added issues to repository so that Houston will have a place to send issues"
 msgstr ""
 
-#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:70
-#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:72
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:102
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:104
 msgid "First release"
 msgstr ""
 
-#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:85
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:117
 msgid "Bart Zaalberg"
 msgstr ""
