@@ -1,5 +1,6 @@
 src/logic/Difficulty.vala
-
+src/views/DifficultyView.vala
+src/views/WelcomeView.vala
 src/Board.vala
 src/HeaderBar.vala
 src/MainWindow.vala

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-06 15:23+0200\n"
+"POT-Creation-Date: 2019-12-22 00:22+0900\n"
 "PO-Revision-Date: 2019-11-24 13:12-0300\n"
 "Last-Translator: Michał Nowakowski <nowakowski@offshore.rocks>\n"
 "Language-Team: none\n"
@@ -32,7 +32,8 @@ msgid "com.github.bartzaalberg.sudokular"
 msgstr "com.github.bartzaalberg.sudokular"
 
 #: data/com.github.bartzaalberg.sudokular.desktop.in:12
-msgid "game;videogame;video game;player;sudoku;"
+#, fuzzy
+msgid "game;videogame;player;sudoku;"
 msgstr "gra;grawideo;gra wideo;gracz;sudoku"
 
 #: data/com.github.bartzaalberg.sudokular.appdata.xml.in:9
@@ -43,10 +44,11 @@ msgid ""
 "to use logic to fill in the missing digits and complete the grid. A move is "
 "incorrect if:"
 msgstr ""
-"Celem sudoku jest wypełnienie siatki 9×9 cyframi tak, aby każda kolumna, rząd "
-"i sekcja 3×3 zawierały liczby od 1 do 9. Na początku gry, siatka 9×9 będzie "
-"miała wypełnione niektóre kwadraty. Twoim zadaniem jest użycie logiki do "
-"wypełnienia brakujących cyfr i uzupełnienia siatki. Ruch jest nieprawidłowy, jeśli:"
+"Celem sudoku jest wypełnienie siatki 9×9 cyframi tak, aby każda kolumna, "
+"rząd i sekcja 3×3 zawierały liczby od 1 do 9. Na początku gry, siatka 9×9 "
+"będzie miała wypełnione niektóre kwadraty. Twoim zadaniem jest użycie logiki "
+"do wypełnienia brakujących cyfr i uzupełnienia siatki. Ruch jest "
+"nieprawidłowy, jeśli:"
 
 #: data/com.github.bartzaalberg.sudokular.appdata.xml.in:11
 msgid "Any row contains more than one of the same number from 1 to 9"
@@ -54,44 +56,98 @@ msgstr "Jakikolwiek rząd posiada więcej, niż jedną taką samą cyfrę od 1 d
 
 #: data/com.github.bartzaalberg.sudokular.appdata.xml.in:12
 msgid "Any column contains more than one of the same number from 1 to 9"
-msgstr "Jakakolwiek kolumna posiada więcej, niż jedną taką samą cyfrę od 1 do 9"
+msgstr ""
+"Jakakolwiek kolumna posiada więcej, niż jedną taką samą cyfrę od 1 do 9"
 
 #: data/com.github.bartzaalberg.sudokular.appdata.xml.in:13
 msgid "Any 3×3 grid contains more than one of the same number from 1 to 9"
-msgstr "Jakakolwiek sekcja 3×3 posiada więcej, niż jedną taką samą cyfrę od 1 do 9"
+msgstr ""
+"Jakakolwiek sekcja 3×3 posiada więcej, niż jedną taką samą cyfrę od 1 do 9"
 
 #: data/com.github.bartzaalberg.sudokular.appdata.xml.in:51
-msgid "Updated application name and theme"
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:53
+msgid "Added Polish translation"
+msgstr ""
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:59
+msgid "Small fixes"
+msgstr ""
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:61
+msgid "Do not resume games when content is null"
+msgstr ""
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:62
+msgid "Generate save game on start"
+msgstr ""
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:63
+msgid "Simplified building steps"
+msgstr ""
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:64
+msgid "Removed depracated Granite.Application"
+msgstr ""
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:70
+msgid "Interface changes and more"
+msgstr ""
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:72
+#, fuzzy
+msgid "Updated application name in store"
 msgstr "Zaktualizowano nazwę aplikacji i szablon"
 
-#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:53
-msgid "Application is now called sudokular"
-msgstr "Aplikacja nazywa się teraz Sudokular"
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:73
+msgid "Added dark mode for grid"
+msgstr ""
 
-#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:54
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:74
+msgid "Added new menu"
+msgstr ""
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:75
+msgid "Added back button"
+msgstr ""
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:76
+msgid "Fixed saving bug on application kill shortcut"
+msgstr ""
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:77
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:86
 msgid "Updated screenshots"
 msgstr "Zaktualizowano zrzuty ekranu"
 
-#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:55
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:83
+msgid "Updated application name and theme"
+msgstr "Zaktualizowano nazwę aplikacji i szablon"
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:85
+msgid "Application is now called sudokular"
+msgstr "Aplikacja nazywa się teraz Sudokular"
+
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:87
 msgid "Updated header image"
 msgstr "Zaktualizowano obrazek w nagłówku"
 
-#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:61
-#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:63
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:93
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:95
 msgid "Updated appdata"
 msgstr "Zaktualizowano AppData"
 
-#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:64
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:96
 msgid ""
 "Added issues to repository so that Houston will have a place to send issues"
 msgstr ""
-"Dodano mechanizm usterek do repozytorium, aby Houston miało miejsce do przesyłania usterek"
+"Dodano mechanizm usterek do repozytorium, aby Houston miało miejsce do "
+"przesyłania usterek"
 
-#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:70
-#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:72
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:102
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:104
 msgid "First release"
 msgstr "Pierwsza wersja"
 
-#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:85
+#: data/com.github.bartzaalberg.sudokular.appdata.xml.in:117
 msgid "Bart Zaalberg"
 msgstr "Bart Zaalberg"

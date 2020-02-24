@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.bartzaalberg.sudokular\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-06 15:23+0200\n"
+"POT-Creation-Date: 2019-12-22 00:21+0900\n"
 "PO-Revision-Date: 2019-11-24 13:12-0300\n"
 "Last-Translator: Michał Nowakowski <nowakowski@offshore.rocks>\n"
 "Language-Team: none\n"
@@ -32,37 +32,59 @@ msgstr "Trudny"
 msgid "Master"
 msgstr "Mistrzowski"
 
-#: src/Board.vala:288
-msgid "Wrong number"
-msgstr "Zła liczba"
-
-#: src/HeaderBar.vala:37 src/HeaderBar.vala:46
-msgid "Points: "
-msgstr "Punkty: "
-
-#: src/HeaderBar.vala:40 src/HeaderBar.vala:47
-msgid "Factor: "
-msgstr "Mnożnik: "
-
-#: src/HeaderBar.vala:54 src/WinPage.vala:76
-msgid "broken series"
-msgstr "skuchy"
-
-#: src/HeaderBar.vala:76
-msgid "Light mode"
-msgstr "Jasny tryb"
-
-#: src/HeaderBar.vala:77
-msgid "Dark mode"
-msgstr "Ciemny tryb"
-
-#: src/MainWindow.vala:29
+#: src/views/DifficultyView.vala:10
 msgid "Choose difficulty"
 msgstr "Wybierz trudność"
 
-#: src/MainWindow.vala:57
-msgid "Resume last game"
+#: src/views/WelcomeView.vala:10
+msgid "Sudokular"
+msgstr ""
+
+#: src/views/WelcomeView.vala:11
+#, fuzzy
+msgid "New game"
+msgstr "Nowa gra"
+
+#: src/views/WelcomeView.vala:11
+msgid "Choose difficulty and start a new puzzle"
+msgstr ""
+
+#: src/views/WelcomeView.vala:17
+#, fuzzy
+msgid "Resume game"
 msgstr "Wznów poprzednią grę"
+
+#: src/views/WelcomeView.vala:17
+msgid "Continue your game"
+msgstr ""
+
+#: src/Board.vala:300
+msgid "Wrong number"
+msgstr "Zła liczba"
+
+#: src/HeaderBar.vala:43 src/HeaderBar.vala:52
+msgid "Points: "
+msgstr "Punkty: "
+
+#: src/HeaderBar.vala:46 src/HeaderBar.vala:53
+msgid "Factor: "
+msgstr "Mnożnik: "
+
+#: src/HeaderBar.vala:60 src/WinPage.vala:76
+msgid "broken series"
+msgstr "skuchy"
+
+#: src/HeaderBar.vala:80
+msgid "Back"
+msgstr ""
+
+#: src/HeaderBar.vala:98
+msgid "Light mode"
+msgstr "Jasny tryb"
+
+#: src/HeaderBar.vala:99
+msgid "Dark mode"
+msgstr "Ciemny tryb"
 
 #: src/WinPage.vala:33
 msgid "Errors:"
@@ -77,8 +99,8 @@ msgid "Highscore:"
 msgstr "Najwyższy wynik:"
 
 #: src/WinPage.vala:56
-msgid "New Game"
-msgstr "Nowa gra"
+msgid "Back to menu"
+msgstr ""
 
 #: src/WinPage.vala:68
 msgid "none!"
