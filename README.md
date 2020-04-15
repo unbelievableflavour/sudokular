@@ -1,3 +1,6 @@
+<a href="https://gitlocalize.com/repo/4343"> <img src="https://gitlocalize.com/repo/4343/whole_project/badge.svg" /> </a>
+<img src="https://travis-ci.org/bartzaalberg/sudokular.svg?branch=master" />
+
 # Sudokular
 The number that is alone
 
