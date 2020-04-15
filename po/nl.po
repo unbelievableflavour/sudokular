@@ -1,0 +1,110 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.bartzaalberg.sudokular package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: com.github.bartzaalberg.sudokular\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-22 00:21+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/logic/Difficulty.vala:44
+msgid "Easy"
+msgstr "Makkelijk"
+
+#: src/logic/Difficulty.vala:46
+msgid "Medium"
+msgstr "Gemiddeld"
+
+#: src/logic/Difficulty.vala:48
+msgid "Hard"
+msgstr "Moeilijk"
+
+#: src/logic/Difficulty.vala:50
+msgid "Master"
+msgstr "Extreem"
+
+#: src/views/DifficultyView.vala:10
+msgid "Choose difficulty"
+msgstr "Kies moeilijkheidsgraad"
+
+#: src/views/WelcomeView.vala:10
+msgid "Sudokular"
+msgstr "Sudokular"
+
+#: src/views/WelcomeView.vala:11
+msgid "New game"
+msgstr "Nieuw spel"
+
+#: src/views/WelcomeView.vala:11
+msgid "Choose difficulty and start a new puzzle"
+msgstr "Kies de moeilijkheidsgraad en begin een nieuwe puzzel"
+
+#: src/views/WelcomeView.vala:17
+msgid "Resume game"
+msgstr "Spel voortzetten"
+
+#: src/views/WelcomeView.vala:17
+msgid "Continue your game"
+msgstr "Zet je vorige spel voort"
+
+#: src/Board.vala:300
+msgid "Wrong number"
+msgstr "Verkeerd nummer"
+
+#: src/HeaderBar.vala:43 src/HeaderBar.vala:52
+msgid "Points: "
+msgstr "Punten:"
+
+#: src/HeaderBar.vala:46 src/HeaderBar.vala:53
+msgid "Factor: "
+msgstr "Factor:"
+
+#: src/HeaderBar.vala:60 src/WinPage.vala:76
+msgid "broken series"
+msgstr "gebroken reeks"
+
+#: src/HeaderBar.vala:80
+msgid "Back"
+msgstr "Terug"
+
+#: src/HeaderBar.vala:98
+msgid "Light mode"
+msgstr "Lichte modus"
+
+#: src/HeaderBar.vala:99
+msgid "Dark mode"
+msgstr "Donkere modus"
+
+#: src/WinPage.vala:33
+msgid "Errors:"
+msgstr "Fouten:"
+
+#: src/WinPage.vala:42
+msgid "Result:"
+msgstr "Resultaat:"
+
+#: src/WinPage.vala:49
+msgid "Highscore:"
+msgstr "Highscore:"
+
+#: src/WinPage.vala:56
+msgid "Back to menu"
+msgstr "Terug naar menu"
+
+#: src/WinPage.vala:68
+msgid "none!"
+msgstr "geen!"
+
+#: src/WinPage.vala:68
+msgid "perfect!"
+msgstr "perfect!"
